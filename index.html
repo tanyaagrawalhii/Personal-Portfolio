@@ -1,124 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Design Mastery | Responsive Portfolio</title>
     <script src="https://kit.fontawesome.com/f7d3dff29d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="page1">
-        <div id="container">
+  </head>
+  <body>
+    <nav>
+      <div class="nav_content">
+          <h1> Tanya.</h1>
+          <label for="check" class="checkbox">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <input type="checkbox" name="check" id="check" />
+          <ul id="sidemenu">
+              <li><a href="#page1">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <img src="dark theme icon/moon.png" id="icon">
+          </ul>
+          
+          
+      </div>
+  </nav>
+  <div id="page1">
+    <div id="container">
+        
+        <div id="text">
+            <p class="subtitle">HELLO</p>
+            <h1 class="title">
+                I'm <span>Tanya Agrawal<br />a</span> Web Developer
+            </h1>
+            <p class="description">
+                Welcome to my web developer portfolio! I'm Tanya, a skilled and
+                creative web developer with a passion for creating beautiful,
+                responsive, and user-friendly websites. 
+            </p>
             
-            <nav >
-                <h2> Portfolio.</h2>
-                <ul id="sidemenu">
-                    <li><a href="#page1">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    
-                    <li><a href="#portfolio">Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div id="text">
-                <p>Web Developer</p>
-                <h1>Hi! I,m <span>Tanya</span><br>Agrawal</h1>
-                
-            </div>
         </div>
-
-    </div>
-    <!-- ---------------ABOUT-------------------- -->
-    <div>
-        <div id="about">
-            <div class="page2">
-                <div class="row">
-                    <div class="col-1">
-                        <img src="images/user.jpeg">
-                    </div>
-                    <div class="col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>I am a skilled front-end web developer with a strong foundation in HTML, CSS, and JavaScript. I am knowledgeable about web development best practices, including accessibility, responsive design, and performance optimization. I am also comfortable using tools like Git for version control.I've developed several projects, including a personal portfolio website that showcases my technical prowess. Actively involved in tech clubs and coding competitions, I continuously seek to enhance my skills and knowledge.
-
-                        </p>
-                        <div class="titles">
-                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                            <p class="tab-links"onclick="opentab('Education')">Education</p>
-                        </div>
-                        <div class="contents tab-1" id="skills">
-                            <ul>
-                                
-                                <li><span>Web Development</span><br>HTML | CSS | JavaScript</li>
-                                <li><span>Technical Skills</span><br>C | C++</li>
-                                <li><span>Others</span><br>Operating System | Object Oriented Programming</li>
-                                
-                            </ul>
-                        </div>
-                        <div class="contents" id="Experience">
-                            <ul>
-                                
-                                <li><span>1.</span><br>Solved 100+ problems in leetcode</li>
-                                <li><span>2.</span><br>Contributed in GSSoc'24</li>
-                                
-                            </ul>
-                        </div>
-                        <div class="contents" id="Education">
-                            <ul>
-                                
-                                <li><span>2021</span><br>St. Raphael's Secondary School,Indore <br> CBSE (class XII) , Aggregate: 93%</li>
-                                <li><span>2023</span><br>SGSITS,Indore <br> Completed 3rd Sem , Aggregate SCGPA: 7.96 </li>
-                                
-                                
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+        <div class="image">
+            <img src="img1.jpeg" alt="profile"/>
         </div>
     </div>
 
-
-<!-- --------------------------PORTFOLIO----------------------- -->
-<div id="portfolio">
-    <div class="page4">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/playstation.png">
-                <div class="layer">
-                    <h3>PlayStation</h3>
-                    <p>It is a gaming website which includes three games in it i.e Tic-Tac-toe , Maze  and iDragon.These games are meticulously crafted using HTML, CSS, and JavaScript, showcasing a blend of classic fun and modern web technologies. </p>
-                    <a href="https://tanyaagrawalhii.github.io/PlayStation/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/Weather.png">
-                <div class="layer">
-                    <h3>Weather Chrome Extension</h3>
-                    <p>The Weather Chrome Extension is a handy tool developed using JavaScript that provides real-time weather updates directly in your browser. It fetches weather data from a reliable API and displays current conditions, forecasts, and temperature for your chosen location. The extension is designed to be user-friendly, with a clean interface and instant access to weather information without leaving your current webpage.</p>
-                    <a href="https://tanyaagrawalhii.github.io/Weather_ChromeExtension/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/Budgetry.png">
-                <div class="layer">
-                    <h3>Money Tracker App</h3>
-                    <p>The Money Tracker App is a web-based tool developed using HTML, CSS, and JavaScript that helps users manage their finances effectively. This app allows users to record their income and expenses and categorize transactions. With a user-friendly interface, it simplifies budgeting and making it easy to keep track of money and achieve financial goals.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class ="btn">See More</a>
-    </div>
 </div>
+    
 
-<!-- ---------------------CONTACT---------------------------- -->
-<div id="contact">
+   
+    <div id="about">
+      <div class="page2">
+          <div class="row">
+              <div class="col-1">
+                  <img src="img2.jpeg" height="630px">
+              </div>
+              <div class="col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <!-- <p>I am a skilled front-end web developer with a strong foundation in HTML, CSS, and JavaScript. I am knowledgeable about web development best practices, including accessibility, responsive design, and performance optimization. I am also comfortable using tools like Git for version control.I've developed several projects, including a personal portfolio website that showcases my technical prowess. Actively involved in tech clubs and coding competitions, I continuously seek to enhance my skills and knowledge. -->
+
+                  </p>
+                  <div class="titles">
+                      <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                      <p class="tab-links"onclick="opentab('Education')">Education</p>
+                  </div>
+                  <div class="contents tab-1" id="skills">
+                      <ul>
+                          
+                          <li><span>Web Development</span><br>HTML | CSS | JavaScript</li>
+                          <li><span>Technical Skills</span><br>C | C++</li>
+                          <li><span>Others</span><br>Operating System | Object Oriented Programming</li>
+                          
+                      </ul>
+                  </div>
+                  <div class="contents" id="Experience">
+                      <ul>
+                          
+                          <li><span>1.</span><br>Solved 100+ problems in leetcode</li>
+                          <li><span>2.</span><br>Contributed in GSSoc'24</li>
+                          
+                      </ul>
+                  </div>
+                  <div class="contents" id="Education">
+                      <ul>
+                          
+                          <li><span>2021</span><br>St. Raphael's Secondary School,Indore <br> CBSE (class XII) , Aggregate: 93%</li>
+                          <li><span>2023</span><br>SGSITS,Indore <br> Completed 3rd Sem , Aggregate SCGPA: 7.96 </li>
+                          
+                          
+                      </ul>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+    </div>
+  
+  
+  <div>
+    <div id="works">
+      <h1 class="heading">Projects</h1>
+      <div class="container project-container">
+        <div class="project">
+          <img src="Dino.png" >
+          <h3>Project 1</h3>
+          <div class="matter">
+            <a href="https://github.com/tanyaagrawalhii/iDragon" class="btn btn-1">Github</a>
+            <a href=" https://tanyaagrawalhii.github.io/iDragon/" class="btn btn-2">Live Demo</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="Weather.png" >
+          <h3>Project 2</h3>
+          <div class="matter">
+            <a href="https://github.com/tanyaagrawalhii/Weather_ChromeExtension" class="btn btn-1">Github</a>
+            <a href="https://tanyaagrawalhii.github.io/Weather_ChromeExtension/" class="btn btn-2">Live Demo</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="IMDb.jpg" >
+          <h3>Project 3</h3>
+          <div class="matter">
+            <a href="https://github.com/tanyaagrawalhii/Cinemate" class="btn btn-1">Github</a>
+            <a href=" https://tanyaagrawalhii.github.io/Cinemate/" class="btn btn-2">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact">
     <div class="page5">
         <div class="row">
             <div class="left">
@@ -134,8 +151,8 @@
             </div>
             <div class="right">
                 <form name='submit-to-google-sheet'>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <input type="text" name="Name" placeholder="Your Name" required autocomplete="off">
+                    <input type="email" name="Email" placeholder="Your Email" required autocomplete="off">
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
@@ -145,9 +162,10 @@
     </div>
 </div>
 
+<div class="copyright">
+  <p>&copy; Copyright Your Tanya Agrawal || All rights Rserved</p>
+</div>
 
-<script src="script.js"></script>
-
-<script src="script2.js"></script>
-
+   <script src="script.js"></script>
+  </body>
 </html>
